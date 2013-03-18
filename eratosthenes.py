@@ -1,5 +1,8 @@
 import math
 
+class EratosthenesExc(Exception):
+    '''Base class for errors in the highchart package.'''
+
 class Eratosthenes(object):
     def __init__(self, value, *args, **kwargs):
         if not isinstance(value, int):
